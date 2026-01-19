@@ -1,0 +1,22 @@
+{
+    "model_url": "https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26x.pt",
+    "model_path": "yolo26x.pt",
+    "classes": [0],
+    "video_path": "crowd.mp4",
+    "bboxes_path": "boxes_x.pt",
+    "device": "auto",
+    "tracking":
+        {
+            "track_args": {
+                "verbose": false
+            }
+        },
+    "visualization":
+        {
+            "save_path": "out_x.mp4",
+            "plot_args": {
+                "use_names": true,
+                "color_mode": "instance"
+            }
+        }
+}
