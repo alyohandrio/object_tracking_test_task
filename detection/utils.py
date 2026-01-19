@@ -1,9 +1,12 @@
+"""This file contins different useful functions."""
+
 from __future__ import annotations
 
 from urllib.request import urlretrieve
 
+
 def get_file(url: str, path: str):
-    """Downloads file from url
+    """Download file from url.
 
     Args:
         url (str): Url to download file from.
@@ -15,3 +18,4 @@ def get_file(url: str, path: str):
     """
     filename, msg = urlretrieve(url, path)
     return filename, msg
+
