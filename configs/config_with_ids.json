@@ -1,0 +1,17 @@
+{
+    "model_url": "https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26n.pt",
+    "model_path": "yolo26n.pt",
+    "classes": [0],
+    "video_path": "crowd.mp4",
+    "bboxes_path": "boxes.pt",
+    "device": "auto",
+    "visualization":
+        {
+            "ids": [0, 1, 2, 3, 4, 5],
+            "save_path": "out_with_ids.mp4",
+            "plot_args": {
+                "use_names": true,
+                "color_mode": "instance"
+            }
+        }
+}
