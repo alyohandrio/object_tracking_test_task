@@ -8,7 +8,7 @@
     "visualization":
         {
             "ids": [0, 1, 2, 3, 4, 5],
-            "save_path": "out_with_ids.mp4",
+            "save_path": "video/out_with_ids.mp4",
             "plot_args": {
                 "use_names": true,
                 "color_mode": "instance"

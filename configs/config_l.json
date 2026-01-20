@@ -13,7 +13,7 @@
         },
     "visualization":
         {
-            "save_path": "out_l.mp4",
+            "save_path": "video/out_l.mp4",
             "plot_args": {
                 "use_names": true,
                 "color_mode": "instance"
