@@ -3,6 +3,7 @@
 import argparse
 import json
 
+import os
 import torch
 from detection.boxes import Boxes
 
@@ -20,7 +21,8 @@ def main(config, out_path, num_objects):
     ids = torch.randperm(all_ids.shape[0], generator=generator)[:num_objects]
 
     config["visualization"]["ids"] = ids.tolist()
-    save_path = f"sample_{num_objects}_" + config["visualization"]["save_path"]
+    base_path, filename = os.path.split(config["visualization"]["save_path"])
+    save_path = os.path.join(base_path, f"sample_{num_objects}_" + filename)
     config["visualization"]["save_path"] = save_path
     with open(out_path, "w") as f:
         json.dump(config, f)
